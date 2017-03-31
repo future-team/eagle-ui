@@ -57,7 +57,7 @@ export default class Mask extends Component{
                 );
             }
             footer.push(
-                <div key="mask-footer" className="footer" style={{
+                <div key="mask-footer" className="eg-footer" style={{
                     textAlign:buttonAlign
                 }}>
                     {btns}
@@ -109,7 +109,7 @@ export default class Mask extends Component{
 
                 <div className={
                     classnames(
-                        'header',
+                        'eg-header',
                         'h4',
                         {
                             'header-bg':isHeaderBackground,
@@ -119,7 +119,7 @@ export default class Mask extends Component{
                 } style={{
                         textAlign:'left'
                     }}>{title}</div>
-                <div className="content" style={{
+                <div className="eg-content" style={{
                     textAlign:contentAlign
                 }}>{this.props.children}</div>
                 {this.renderFooter() }

@@ -35609,7 +35609,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Icons.prototype.render = function render() {
 	        var defaultStyle = {
 	            width: '18px',
-	            height: '18px'
+	            height: '18px',
+	            color: '#fff'
 	        };
 	        var _props = this.props;
 	        var name = _props.name;
@@ -37906,7 +37907,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	            footer.push(_react2['default'].createElement(
 	                'div',
-	                { key: 'mask-footer', className: 'footer', style: {
+	                { key: 'mask-footer', className: 'eg-footer', style: {
 	                        textAlign: buttonAlign
 	                    } },
 	                btns
@@ -37952,7 +37953,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: _classnames2['default'](this.getProperty(), this.getClassName(className), this.props.className), style: this.props.style },
 	            _react2['default'].createElement(
 	                'div',
-	                { className: _classnames2['default']('header', 'h4', {
+	                { className: _classnames2['default']('eg-header', 'h4', {
 	                        'header-bg': isHeaderBackground,
 	                        'hide': !isHeader || title == ''
 	                    }), style: {
@@ -37962,7 +37963,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'content', style: {
+	                { className: 'eg-content', style: {
 	                        textAlign: contentAlign
 	                    } },
 	                this.props.children
@@ -38050,7 +38051,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: _classnames2['default'](this.getProperty(), this.getClassName(className)) },
 	            _react2['default'].createElement(
 	                'div',
-	                { className: _classnames2['default']('header', 'h4', {
+	                { className: _classnames2['default']('eg-header', 'h4', {
 	                        'header-bg': isHeaderBackground,
 	                        'hide': !isHeader
 	                    }) },
@@ -38058,14 +38059,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'content', style: {
+	                { className: 'eg-content', style: {
 	                        textAlign: contentAlign
 	                    } },
 	                message
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'footer', style: {
+	                { className: 'eg-footer', style: {
 	                        textAlign: buttonAlign
 	                    } },
 	                _react2['default'].createElement(
@@ -38160,7 +38161,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: _classnames2['default'](this.getProperty(), this.getClassName(className)) },
 	            _react2['default'].createElement(
 	                'div',
-	                { className: _classnames2['default']('header', 'h4', {
+	                { className: _classnames2['default']('eg-header', 'h4', {
 	                        'header-bg': isHeaderBackground,
 	                        'hide': !isHeader
 	                    }) },
@@ -38168,14 +38169,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'content', style: {
+	                { className: 'eg-content', style: {
 	                        textAlign: contentAlign
 	                    } },
 	                message
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'footer', style: {
+	                { className: 'eg-footer', style: {
 	                        textAlign: buttonAlign
 	                    } },
 	                _react2['default'].createElement(
@@ -38296,7 +38297,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: _classnames2['default'](this.getProperty(), this.getClassName(className)) },
 	            _react2['default'].createElement(
 	                'div',
-	                { className: _classnames2['default']('header', 'h4', {
+	                { className: _classnames2['default']('eg-header', 'h4', {
 	                        'header-bg': isHeaderBackground,
 	                        'hide': !isHeader
 	                    }) },
@@ -38304,7 +38305,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'content', style: {
+	                { className: 'eg-content', style: {
 	                        textAlign: contentAlign
 	                    } },
 	                _react2['default'].createElement(_Input2['default'], { ref: function (ref) {
@@ -38313,7 +38314,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { className: 'footer', style: {
+	                { className: 'eg-footer', style: {
 	                        textAlign: buttonAlign
 	                    } },
 	                _react2['default'].createElement(
@@ -40993,7 +40994,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    name: 'radio-unchecked', alt: '旋转' }),
 	                _react2['default'].createElement(_utilsIconsJs2['default'], { onClick: (_context = this.cssEnhance).bind.call(_context, this, 'max'), className: 'upload-icon', name: 'add',
 	                    alt: '放大' }),
-	                _react2['default'].createElement(_utilsIconsJs2['default'], { onClick: (_context = this.cssEnhance).bind.call(_context, this, 'min'), className: 'upload-icon', name: 'minnus',
+	                _react2['default'].createElement(_utilsIconsJs2['default'], { onClick: (_context = this.cssEnhance).bind.call(_context, this, 'min'), className: 'upload-icon', name: 'minus',
 	                    alt: '缩小' })
 	            )
 	        );
@@ -42827,6 +42828,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *     min：输入的值需要大于等于此规则定义的值
 	 *     max：输入的值需要小于等于此规则定义的值
 	 *     range：一个区间取值范围
+	 *     自定义，比如rules:{
+	 *          checkbox:{
+	 *                required:true,
+	 *                //自定义规则
+	 *                isValueToNumber:{
+	 *                    text:'value值不是数字',
+	 *                    rule:function(value){
+	 *                        return !isNaN(value-0);
+	 *                    }
+	 *                }
+	 *            }
+	 *       }
+	 *     会验证name为checkbox的输入控件。
+	 *     自定义的规则作为key、value配置，validator会依据rule方法返回的true或者false来决定是否提示text中的文案
 	 * </pre>
 	 * @class ValidatorPanel
 	 * @module form(表单)
@@ -43501,6 +43516,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *     min：输入的值需要大于等于此规则定义的值
 	 *     max：输入的值需要小于等于此规则定义的值
 	 *     range：一个区间取值范围
+	 *     自定义，比如rules:{
+	 *          checkbox:{
+	 *                required:true,
+	 *                //自定义规则
+	 *                isValueToNumber:{
+	 *                    text:'value值不是数字',
+	 *                    rule:function(value){
+	 *                        return !isNaN(value-0);
+	 *                    }
+	 *                }
+	 *            }
+	 *        }
+	 *     会验证name为checkbox的输入控件。
+	 *     自定义的规则作为key、value配置，validator会依据rule方法返回的true或者false来决定是否提示text中的文案
 	 * </pre>
 	 * @class ValidatorWrapper
 	 * @module form(表单)
@@ -51875,7 +51904,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    null,
 	                    _react2['default'].createElement(
 	                        _eagleUi.Select,
-	                        { defaultChecked: this.state.defaultCity, getValueCallback: this.getValue.bind(this), placeholder: '请选择' },
+	                        {
+	                            readOnly: true,
+	                            defaultChecked: this.state.defaultCity, getValueCallback: this.getValue.bind(this), placeholder: '请选择' },
 	                        this.state.options
 	                    ),
 	                    _react2['default'].createElement('div', { id: 'showtip', className: 'color-info' })
@@ -52763,11 +52794,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                required: true,
 	                //自定义规则
 	                isValueToNumber: {
-	                    text: 'value值不是字符串',
+	                    text: 'value值不是数字',
 	                    rule: function rule(value) {
-	                        console.dir(value);
-	                        //return isNaN(value);
-	                        return true;
+	                        return !isNaN(value - 0);
 	                    }
 	                }
 	            },
@@ -52826,42 +52855,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _eagleUi.Dialog.mask('demo2');
 	    };
 
-	    Demo.prototype.checktab = function checktab() {
-	        if (this.state.showTab == '1') {
-	            return _react2['default'].createElement(
-	                'div',
-	                null,
-	                _react2['default'].createElement(
-	                    _eagleUi.Row,
-	                    null,
-	                    _react2['default'].createElement(
-	                        _eagleUi.Col,
-	                        null,
-	                        _react2['default'].createElement(_eagleUi.Input, { placeholder: '请输入姓名', name: 'userName', 'data-validate': true })
-	                    )
-	                ),
-	                _react2['default'].createElement(
-	                    _eagleUi.Row,
-	                    null,
-	                    _react2['default'].createElement(
-	                        _eagleUi.Col,
-	                        null,
-	                        _react2['default'].createElement(
-	                            _eagleUi.CheckboxGroup,
-	                            null,
-	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', name: 'checkbox', value: '1', 'data-validate': true }),
-	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', name: 'checkbox', value: '2', 'data-validate': true }),
-	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', name: 'checkbox', value: '3', 'data-validate': true }),
-	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', name: 'checkbox', value: '4', 'data-validate': true })
-	                        )
-	                    )
-	                )
-	            );
-	        } else {
-	            return null;
-	        }
-	    };
-
 	    Demo.prototype.render = function render() {
 	        return _react2['default'].createElement(
 	            _libsLayout.DemoLayout,
@@ -52880,6 +52873,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2['default'].createElement(
 	                        _eagleUi.ValidatorPanel,
 	                        { rules: this.rules, submitElement: '#submit1', direction: 'right', id: 'testFrom', update: this.state.update, submitCallback: this.submit.bind(this) },
+	                        _react2['default'].createElement(
+	                            _eagleUi.CheckboxGroup,
+	                            null,
+	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', label: '1', name: 'checkbox', value: '1', 'data-validate': true }),
+	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', label: '2', name: 'checkbox', value: '2', 'data-validate': true }),
+	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', label: '3', name: 'checkbox', value: '3', 'data-validate': true }),
+	                            _react2['default'].createElement(_eagleUi.Input, { type: 'checkbox', label: '4a', name: 'checkbox', value: '4a', 'data-validate': true })
+	                        ),
 	                        _react2['default'].createElement(
 	                            _eagleUi.Row,
 	                            null,

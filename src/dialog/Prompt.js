@@ -38,7 +38,7 @@ export default class Prompt extends Component{
             )}>
                 <div className={
                     classnames(
-                        'header',
+                        'eg-header',
                         'h4',
                         {
                             'header-bg':isHeaderBackground,
@@ -46,12 +46,12 @@ export default class Prompt extends Component{
                         }
                     )
                 }>{title}</div>
-                <div className="content" style={{
+                <div className="eg-content" style={{
                     textAlign:contentAlign
                 }}>
                     <Input ref={(ref)=>{this.input=ref}} type='text' style={{width:inputWidth}} onChange={::this.changHandler}/>
                 </div>
-                <div className="footer" style={{
+                <div className="eg-footer" style={{
                     textAlign:buttonAlign
                 }}>
                     <Button egSize="xs" onClick={::this.submitHandler}>{submitTxt}</Button>

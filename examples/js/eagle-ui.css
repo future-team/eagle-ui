@@ -3330,6 +3330,27 @@ textarea:focus,
   background: #fff;
   border: 1px solid #e5e5e5;
 }
+.eg-dialog .eg-header {
+  padding: 15px 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.eg-dialog .eg-header.header-bg {
+  background: #eee;
+  border-color: transparent;
+}
+.eg-dialog .eg-content {
+  margin: 0;
+  height: auto;
+  padding: 15px;
+}
+.eg-dialog .eg-footer {
+  text-align: center;
+  padding: 0 15px 15px;
+  background: #fff;
+}
+.eg-dialog .eg-footer button:not(:last-of-type) {
+  margin-right: 10px;
+}
 .eg-dialog .header {
   padding: 15px 15px;
   border-bottom: 1px solid #e5e5e5;
@@ -3383,6 +3404,12 @@ textarea:focus,
   display: none;
 }
 .eg-dialog-outside .content {
+  padding: 0;
+}
+.eg-dialog-outside .eg-header {
+  display: none;
+}
+.eg-dialog-outside .eg-content {
   padding: 0;
 }
 .flex-layout {

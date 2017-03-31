@@ -26,7 +26,7 @@ export default class Alert extends Component{
             )}>
                 <div className={
                     classnames(
-                        'header',
+                        'eg-header',
                         'h4',
                         {
                             'header-bg':isHeaderBackground,
@@ -34,10 +34,10 @@ export default class Alert extends Component{
                         }
                     )
                 }>{title}</div>
-                <div className="content" style={{
+                <div className="eg-content" style={{
                     textAlign:contentAlign
                 }}>{message}</div>
-                <div className="footer" style={{
+                <div className="eg-footer" style={{
                     textAlign:buttonAlign
                 }}>
                     <Button egSize="xs" onClick={successCallback}>确定</Button>
